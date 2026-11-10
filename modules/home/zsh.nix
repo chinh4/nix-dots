@@ -4,7 +4,7 @@
   ...
 }: let
   inherit (lib.attrsets) optionalAttrs;
-  inherit (pkgs.stdenv) isLinux isDarwin;
+  inherit (pkgs.stdenv.hostPlatform) isLinux isDarwin;
 in {
   programs.zsh = {
     enable = true;

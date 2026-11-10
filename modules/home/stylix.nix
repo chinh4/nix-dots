@@ -4,7 +4,7 @@
     autoEnable = true;
     polarity = "dark";
 
-    iconTheme = {
+    icons = {
       enable = true;
       package = pkgs.morewaita-icon-theme;
       dark = "MoreWaita";
@@ -13,6 +13,7 @@
 
     targets = {
       spicetify.enable = false;
+      qt.platform = "qtct";
     };
   };
 }

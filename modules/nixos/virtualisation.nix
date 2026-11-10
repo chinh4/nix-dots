@@ -5,6 +5,6 @@
   ];
 
   programs.virt-manager.enable = true;
-  users.users.chinh4thepro.extraGroups = ["libvirtd"];
+  users.users.chinh4.extraGroups = ["libvirtd"];
   virtualisation.libvirtd.enable = true;
 }

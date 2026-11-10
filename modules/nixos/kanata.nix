@@ -31,5 +31,5 @@
     };
   };
 
-  users.users.chinh4thepro.extraGroups = ["input" "uinput"];
+  users.users.chinh4.extraGroups = ["input" "uinput"];
 }

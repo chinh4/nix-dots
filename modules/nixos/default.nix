@@ -26,11 +26,16 @@
       builders-use-substitutes = true;
       trusted-users = [
         "root"
-        "chinh4thepro"
+        "chinh4"
         "@wheel"
       ];
     };
   };
+
+  ### TEMP!!!
+  nixpkgs.config.permittedInsecurePackages = [
+    "python3.14-pybars3-0.9.7"
+  ];
 
   nixpkgs = {
     config = {

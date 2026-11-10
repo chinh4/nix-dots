@@ -2,9 +2,9 @@
   imports = [
     ../default.nix
     ../gaming.nix
-    ../input.nix
+    ../gnome.nix
+    # ../input.nix
     ../kanata.nix
-    ../mangowc.nix
     ../printing.nix
     ../style.nix
   ];

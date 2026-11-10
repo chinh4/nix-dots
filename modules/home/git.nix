@@ -1,9 +1,11 @@
 {...}: {
   programs.git = {
     enable = true;
-    userName = "chinh4thepro";
-    userEmail = "chinh4thepro@gmail.com";
-    extraConfig = {
+    settings = {
+      user = {
+        name = "chinh4thepro";
+        email = "chinh4thepro@gmail.com";
+      };
       color = {
         ui = "auto";
       };

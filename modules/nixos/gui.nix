@@ -20,9 +20,9 @@
       pulse.enable = true;
     };
     logind = {
-      extraConfig = ''
-        HandlePowerKey=ignore
-      '';
+      settings.Login = {
+        HandlePowerKey = "ignore";
+      };
     };
     upower.enable = true;
   };

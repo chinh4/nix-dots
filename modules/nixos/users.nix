@@ -1,8 +1,8 @@
 {pkgs, ...}: {
   programs.zsh.enable = true;
-  users.users.chinh4thepro = {
+  users.users.chinh4 = {
     isNormalUser = true;
-    description = "chinh4thepro";
+    description = "chinh4";
     extraGroups = ["networkmanager" "wheel"];
     shell = pkgs.zsh;
   };

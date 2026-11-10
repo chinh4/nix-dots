@@ -13,5 +13,5 @@
     };
   };
 
-  users.users.chinh4thepro.extraGroups = ["lpadmin"];
+  users.users.chinh4.extraGroups = ["lpadmin"];
 }

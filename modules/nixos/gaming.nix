@@ -5,8 +5,8 @@
 }: {
   environment.systemPackages = with pkgs; [
     gamescope
-    graalvm-ce
-    inputs.nix-gaming.packages.${pkgs.system}.osu-lazer-bin
+    graalvmPackages.graalvm-ce
+    inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.osu-lazer-bin
     mangohud
     prismlauncher
   ];
@@ -26,7 +26,6 @@
 
   programs = {
     gamemode.enable = true;
-    sleepy-launcher.enable = true;
     steam = {
       enable = true;
       extest.enable = true;

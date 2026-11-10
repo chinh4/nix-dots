@@ -11,8 +11,8 @@
   ];
 
   home = {
-    username = "chinh4thepro";
-    homeDirectory = "/home/chinh4thepro";
+    username = "chinh4";
+    homeDirectory = "/home/chinh4";
     stateVersion = "25.11";
     enableNixpkgsReleaseCheck = false;
   };
@@ -35,6 +35,7 @@
       # Coding
       gcc
       rustup
+      python3
 
       # Files
       p7zip
@@ -44,20 +45,20 @@
       wget
       curl
       rsync
-      vesktop
+      legcord
 
       # Nix Tools
       alejandra
     ]
-    ++ lib.optionals stdenv.isDarwin [
+    ++ lib.optionals stdenv.hostPlatform.isDarwin [
       coreutils
       wifi-password
       time
       neofetch
       stats
     ]
-    ++ lib.optionals stdenv.isLinux [
-      protonvpn-gui
+    ++ lib.optionals stdenv.hostPlatform.isLinux [
+      proton-vpn
     ];
 
   programs = {

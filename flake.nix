@@ -2,9 +2,9 @@
   description = "chinh's nixos config";
 
   inputs = {
-    # An anime game launcher
-    aagl = {
-      url = "github:ezKEa/aagl-gtk-on-nix";
+    # Amane
+    amane = {
+      url = "github:MystiaFin/amane";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -23,12 +23,6 @@
     # Lanzaboote
     lanzaboote = {
       url = "github:nix-community/lanzaboote";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    # MangoWC
-    mangowc = {
-      url = "github:DreamMaoMao/mangowc";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -54,16 +48,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Quickshell
-    quickshell = {
-      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    nix-qml-support = {
-      url = "github:outfoxxed/nix-qml-support";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     # Spicetify
     spicetify-nix = {
       url = "github:Gerg-L/spicetify-nix";
@@ -85,17 +69,14 @@
 
   outputs = {
     self,
-    aagl,
+    amane,
     home-manager,
     lanzaboote,
-    mangowc,
     nixos-hardware,
     nixpkgs,
     nixvim,
-    nix-qml-support,
     spicetify-nix,
     stylix,
-    quickshell,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -112,7 +93,6 @@
           modules
           ++ [
             home-manager.nixosModules.home-manager
-            aagl.nixosModules.default
             stylix.nixosModules.stylix
             lanzaboote.nixosModules.lanzaboote
             {
@@ -151,7 +131,7 @@
         ./hosts/aurora
         nixos-hardware.nixosModules.framework-13-7040-amd
         {
-          home-manager.users.chinh4thepro = ./modules/home/config/laptop.nix;
+          home-manager.users.chinh4 = ./modules/home/config/laptop.nix;
         }
       ];
     };

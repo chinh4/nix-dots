@@ -6,7 +6,7 @@
   home.packages = with pkgs;
     [
     ]
-    ++ lib.optionals stdenv.isLinux [
-      inputs.zen-browser.packages.${pkgs.system}.default
+    ++ lib.optionals stdenv.hostPlatform.isLinux [
+      inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     ];
 }

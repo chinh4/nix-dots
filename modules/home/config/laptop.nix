@@ -2,14 +2,13 @@
   imports = [
     ../apps.nix
     ../default.nix
-    ../mangowc.nix
   ];
 
   home = {
     enableNixpkgsReleaseCheck = false;
-    homeDirectory = "/home/chinh4thepro";
+    homeDirectory = "/home/chinh4";
     stateVersion = "25.11";
-    username = "chinh4thepro";
+    username = "chinh4";
   };
 
   programs.home-manager.enable = true;
