@@ -1,5 +1,5 @@
-{inputs, ...}: {
+{inputs, pkgs, ...}: {
   home.packages = [
-    inputs.amane.packages.x86_64-linux.default
+    inputs.amane.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
