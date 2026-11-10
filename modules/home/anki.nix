@@ -7,7 +7,5 @@
       ankiAddons.anki-connect
       ankiAddons.review-heatmap
     ])
-
-    python314Packages.tomlkit
   ];
 }

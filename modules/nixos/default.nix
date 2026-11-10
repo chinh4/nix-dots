@@ -32,11 +32,6 @@
     };
   };
 
-  ### TEMP!!!
-  nixpkgs.config.permittedInsecurePackages = [
-    "python3.14-pybars3-0.9.7"
-  ];
-
   nixpkgs = {
     config = {
       allowUnfree = true;
