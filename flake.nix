@@ -14,12 +14,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Jerry
-    jerry = {
-      url = "github:justchokingaround/jerry";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     # Lanzaboote
     lanzaboote = {
       url = "github:nix-community/lanzaboote";
@@ -39,8 +33,10 @@
     };
 
     # Nixpkgs
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs = {
+      url = "github:nixos/nixpkgs/nixos-unstable";
+      # inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # NixVim
     nixvim = {

@@ -12,6 +12,7 @@
     };
 
     targets = {
+      rofi.enable = false;
       spicetify.enable = false;
       qt.platform = "qtct";
     };
