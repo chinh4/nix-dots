@@ -1,6 +1,5 @@
 {...}: {
   imports = [
-    ./amane.nix
     # ./anki.nix
     ./kicad.nix
     ./kitty.nix

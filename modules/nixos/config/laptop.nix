@@ -6,7 +6,9 @@
     ../input.nix
     ../kanata.nix
     ../niri.nix
+    ../platformio.nix
     ../printing.nix
+    ../secureboot.nix
     ../style.nix
   ];
 }

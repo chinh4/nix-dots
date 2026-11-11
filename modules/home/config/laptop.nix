@@ -2,6 +2,7 @@
   imports = [
     ../apps.nix
     ../default.nix
+    ../niri.nix
   ];
 
   home = {

@@ -1,6 +1,9 @@
 {pkgs, ...}: {
-  environment.systemPackages = with pkgs; [ 
+  environment.systemPackages = with pkgs; [
     xwayland-satellite
+    wofi
+    waypaper
+    swaybg
   ];
 
   programs.niri.enable = true;

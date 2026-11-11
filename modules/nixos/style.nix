@@ -5,6 +5,7 @@
     enable = true;
     autoEnable = true;
     polarity = "dark";
+    homeManagerIntegration.followSystem = true;
 
     opacity = {
       applications = 0.75;

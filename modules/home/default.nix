@@ -31,6 +31,7 @@
       tree
       ffmpeg-full
       unrar
+      duf
 
       # Coding
       gcc

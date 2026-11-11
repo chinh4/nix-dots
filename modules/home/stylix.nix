@@ -1,8 +1,6 @@
 {pkgs, ...}: {
   stylix = {
     enable = true;
-    autoEnable = true;
-    polarity = "dark";
 
     icons = {
       enable = true;

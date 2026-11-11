@@ -9,9 +9,8 @@
     };
   };
 
-
   environment = {
-    gnome.excludePackages = with pkgs; [ gnome-tour gnome-user-docs ];
+    gnome.excludePackages = with pkgs; [gnome-tour gnome-user-docs];
     systemPackages = with pkgs; [
       kdePackages.kate
       nautilus
